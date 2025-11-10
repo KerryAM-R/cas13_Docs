@@ -135,7 +135,7 @@ Bar Plot
 - X-axis:
   - The user can select the x-axis variable to display
   - Default: mapped_region
-  
+
 - Split by header:
   - The user can split the graph intot he various categories that is linked to the **Filter by:** heading
 
@@ -183,5 +183,61 @@ The user can then determine if they wish to filter out the variables within in t
 Side Bar Features
 ^^^^^^^^^^^^^^^^^
 
+Gene Filter
+"""""""""""
+
+Additional Filters
+""""""""""""""""""
+
+Summary
+"""""""
+
+Conservation Parameters
+"""""""""""""""""""""""
+
+Silencing
+"""""""""
+
+Guide Loc. 
+""""""""""
+
+Motif
+"""""
+
+Tree
+""""
+
+
+
+
+
 Main panel
 ^^^^^^^^^^
+
+Balloon Plot (Summary)
+""""""""""""""""""""""
+
+Dot Plotly (Conservation)
+"""""""""""""""""""""""""
+
+Balloon Plot (Silencing) 
+""""""""""""""""""""""""
+
+Off-Target
+""""""""""""""""""""
+
+Filtered Table
+""""""""""""""
+
+
+Guide Location
+"""""""""""""""
+
+Motif
+"""""
+
+Pylogenetic Tree
+""""""""""""""""
+
+Tree Guide Matches
+""""""""""""""""""
