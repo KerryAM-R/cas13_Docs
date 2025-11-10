@@ -12,7 +12,8 @@ Key Features
 Supported Virus Genera
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Currently available Genera:
+**Currently available Genera:**
+
 - Sarbecovirus
 - Merbecovirus
 - Enterovirus A71
@@ -31,32 +32,134 @@ Application structure
 Common Side Bar Features
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Virus Genus** contains the list of viral genus/subgenus in the frontend database
+**Virus Genus:** contains the list of viral genus/subgenus in the frontend database
 
 **Rule Type:** Showcases the types of rules processed. The default is the **GG** rule.
 
 Drop down menu: Appearance Settings
 """""""""""""""""""""""""""""""""""
 
+**Background & Grid**
 
+- Theme preset: Light or Dark
+  + This will reactively set the background to either black or white
+- Backgroup Type: Colour or Transparent
+  + The user has flexibility to downlaod the background of the graphs as either a designated colour or transparent, depending on the publication requirements
+- Background colour
+  + the user either select a colour from the grid, use the hexadecimal naming system or use a colour name (e.g., white)
+- Grid Line Colour
+  + Default: grey
+  + the user either select a colour from the grid, use the hexadecimal naming system or use a colour name (e.g., grey)
 
+[insert image of the layout]
+
+**Text & Font**
+
+- Font
+  + The program uses the "FontHelper" package to find all the system fonts. They have been grouped by origin.
+  + Default: Times New Roman 
+- Axis Title Size
+  + changes the x-axis and y-axis titles for all of the graphs
+  + Default: 24
+- Axis Text Size
+  + changes the x-axis and y-axis tick marks for all of the graphs (e.g, tick marks)
+  + Default: 20
+- Text Colour
+  + the user either select a colour from the grid, use the hexadecimal naming system or use a colour name (e.g., white)
+  + Default: Black (Light theme) or White (dark theme)
+- Strip Text Size
+  + When the user splits the graph (e.g., Bar plot selected Split by header), the graphs will have a bar with the name of the split variable
+  + Default: 24
+
+**Legend**
+
+- Legend Text Size
+  + Changes the size of the listed variables
+  + Default: 20
+- Legend Title Size
+  + Changes the size of the Legend Title, if present
+  + Default: 30
+- Legend Columns
+  + The user can select the number of columns in the list of variables 
+  + Default: 1
+- Legend Location
+  + The user can select the number of columns in the list of variables 
+  + Default: none (Colouring and x-axis/y-axis are identical to remove redundancy) or right
+
+**Colour Data**
+
+- Colour by:
+  + List all of the headers
+  + Default: mapped_region
+- Colouring Palette
+  + The User can select their preferred starting colouring theme: default (R colouring defaults), rainbow, random, heat.colors, terrain.colors, topo.colors, hcl.colors, one
+  + Default: default
+- List of variables that can be coloured
+  + Users can update the list as required 
 
 1. Overview
 -----------
 
+The goal of this section is to showcases what data is present in the application, and a summary table of the backend to the front end processing 
+
 Side Bar Features
 ^^^^^^^^^^^^^^^^^
+
+Bar Plot
+""""""""
+
+- Type of Plot
+  + the user can display the data as either Counts (0 to U+0221E) or Proportions (0 to 1)
+  + *Note: those with n=1 can be difficult to see the bar*
+- Log Transform the counts?
+  + Can use a log10 transformation of the count data so the extreme variables are less obvious 
+  + *Note: those with n=1 will be 0 with log10 when transformation*
+- Filter by: 
+  + The user can choose to remove variables from the bar graph
+  + Default: mapped_region
+- X-axis:
+  + The user can select the x-axis variable to display
+  + Default: mapped_region
+- Split by header:
+  + The user can split the graph intot he various categories that is linked to the **Filter by:** heading
 
 Main panel
 ^^^^^^^^^^
 
-tab 1. Guide Table Summary
+Tab 1. Guide Table Summary
+""""""""""""""""""""""""""
+
+
 - the opening section shows the total number of guides presented for further filtering
 
-tab 2. Guide data:
+Tab 2. Guide data
+"""""""""""""""""
 
-- Allows the user to do an initial exploration of the data
-   + defaults:
+**Table** 
+
+Allows the user to do an initial exploration of the data and see if their proteins and/or regions of interest are present in the database.
+
+Additionally, this ensures that the scientist can extract the intial summary table for publication purposes.
+
+- Summarise by this column(s): 
+   + defaults: mapped_region and Category
+
+Table
+
+- summary statiscts based on the **summarise by this column(s)**
+- Table is downloaded as a .csv file 
+
+
+
+**Bar plot**
+
+Purpose is to visulise the summary statistics of one column (x-axis) and coloured by a second variable if desired
+
+The user can start with either **selecting all?** based on the *X-axis:* 
+
+The user can then determine if they wish to filter out the variables within in the columns selected in *Filter by:*
+
+*note: see **bar plot** side bar panel for customising the plot*
 
 2. Conservation
 ---------------

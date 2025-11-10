@@ -63,8 +63,15 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">1. Overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#side-bar-features">Side Bar Features</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#main-panel">Main panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#side-bar-features">Side Bar Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#bar-plot">Bar Plot</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#main-panel">Main panel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tab-1-guide-table-summary">Tab 1. Guide Table Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tab-2-guide-data">Tab 2. Guide data</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#conservation">2. Conservation</a><ul>
@@ -117,10 +124,12 @@
 </ul>
 <section id="supported-virus-genera">
 <h3>Supported Virus Genera<a class="headerlink" href="#supported-virus-genera" title="Permalink to this heading"></a></h3>
-<p>Currently available Genera:
-- Sarbecovirus
-- Merbecovirus
-- Enterovirus A71</p>
+<p><strong>Currently available Genera:</strong></p>
+<ul class="simple">
+<li><p>Sarbecovirus</p></li>
+<li><p>Merbecovirus</p></li>
+<li><p>Enterovirus A71</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Identify guides the Virologist, Immunologist etc. wishes to test.
@@ -136,32 +145,128 @@ The application detects the current Genera in the database.</p>
 </ul>
 <section id="common-side-bar-features">
 <h3>Common Side Bar Features<a class="headerlink" href="#common-side-bar-features" title="Permalink to this heading"></a></h3>
-<p><strong>Virus Genus</strong> contains the list of viral genus/subgenus in the frontend database</p>
+<p><strong>Virus Genus:</strong> contains the list of viral genus/subgenus in the frontend database</p>
 <p><strong>Rule Type:</strong> Showcases the types of rules processed. The default is the <strong>GG</strong> rule.</p>
 <section id="drop-down-menu-appearance-settings">
 <h4>Drop down menu: Appearance Settings<a class="headerlink" href="#drop-down-menu-appearance-settings" title="Permalink to this heading"></a></h4>
+<p><strong>Background &amp; Grid</strong></p>
+<ul class="simple">
+<li><p>Theme preset: Light or Dark
++ This will reactively set the background to either black or white</p></li>
+<li><p>Backgroup Type: Colour or Transparent
++ The user has flexibility to downlaod the background of the graphs as either a designated colour or transparent, depending on the publication requirements</p></li>
+<li><p>Background colour
++ the user either select a colour from the grid, use the hexadecimal naming system or use a colour name (e.g., white)</p></li>
+<li><p>Grid Line Colour
++ Default: grey
++ the user either select a colour from the grid, use the hexadecimal naming system or use a colour name (e.g., grey)</p></li>
+</ul>
+<p>[insert image of the layout]</p>
+<p><strong>Text &amp; Font</strong></p>
+<ul class="simple">
+<li><p>Font
++ The program uses the “FontHelper” package to find all the system fonts. They have been grouped by origin.
++ Default: Times New Roman</p></li>
+<li><p>Axis Title Size
++ changes the x-axis and y-axis titles for all of the graphs
++ Default: 24</p></li>
+<li><p>Axis Text Size
++ changes the x-axis and y-axis tick marks for all of the graphs (e.g, tick marks)
++ Default: 20</p></li>
+<li><p>Text Colour
++ the user either select a colour from the grid, use the hexadecimal naming system or use a colour name (e.g., white)
++ Default: Black (Light theme) or White (dark theme)</p></li>
+<li><p>Strip Text Size
++ When the user splits the graph (e.g., Bar plot selected Split by header), the graphs will have a bar with the name of the split variable
++ Default: 24</p></li>
+</ul>
+<p><strong>Legend</strong></p>
+<ul class="simple">
+<li><p>Legend Text Size
++ Changes the size of the listed variables
++ Default: 20</p></li>
+<li><p>Legend Title Size
++ Changes the size of the Legend Title, if present
++ Default: 30</p></li>
+<li><p>Legend Columns
++ The user can select the number of columns in the list of variables
++ Default: 1</p></li>
+<li><p>Legend Location
++ The user can select the number of columns in the list of variables
++ Default: none (Colouring and x-axis/y-axis are identical to remove redundancy) or right</p></li>
+</ul>
+<p><strong>Colour Data</strong></p>
+<ul class="simple">
+<li><p>Colour by:
++ List all of the headers
++ Default: mapped_region</p></li>
+<li><p>Colouring Palette
++ The User can select their preferred starting colouring theme: default (R colouring defaults), rainbow, random, heat.colors, terrain.colors, topo.colors, hcl.colors, one
++ Default: default</p></li>
+<li><p>List of variables that can be coloured
++ Users can update the list as required</p></li>
+</ul>
 </section>
 </section>
 </section>
 <section id="overview">
 <h2>1. Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>The goal of this section is to showcases what data is present in the application, and a summary table of the backend to the front end processing</p>
 <section id="side-bar-features">
 <h3>Side Bar Features<a class="headerlink" href="#side-bar-features" title="Permalink to this heading"></a></h3>
+<section id="bar-plot">
+<h4>Bar Plot<a class="headerlink" href="#bar-plot" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p>Type of Plot
++ the user can display the data as either Counts (0 to U+0221E) or Proportions (0 to 1)
++ <em>Note: those with n=1 can be difficult to see the bar</em></p></li>
+<li><p>Log Transform the counts?
++ Can use a log10 transformation of the count data so the extreme variables are less obvious
++ <em>Note: those with n=1 will be 0 with log10 when transformation</em></p></li>
+<li><p>Filter by:
++ The user can choose to remove variables from the bar graph
++ Default: mapped_region</p></li>
+<li><p>X-axis:
++ The user can select the x-axis variable to display
++ Default: mapped_region</p></li>
+<li><p>Split by header:
++ The user can split the graph intot he various categories that is linked to the <strong>Filter by:</strong> heading</p></li>
+</ul>
+</section>
 </section>
 <section id="main-panel">
 <h3>Main panel<a class="headerlink" href="#main-panel" title="Permalink to this heading"></a></h3>
-<p>tab 1. Guide Table Summary
-- the opening section shows the total number of guides presented for further filtering</p>
-<p>tab 2. Guide data:</p>
+<section id="tab-1-guide-table-summary">
+<h4>Tab 1. Guide Table Summary<a class="headerlink" href="#tab-1-guide-table-summary" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p>the opening section shows the total number of guides presented for further filtering</p></li>
+</ul>
+</section>
+<section id="tab-2-guide-data">
+<h4>Tab 2. Guide data<a class="headerlink" href="#tab-2-guide-data" title="Permalink to this heading"></a></h4>
+<p><strong>Table</strong></p>
+<p>Allows the user to do an initial exploration of the data and see if their proteins and/or regions of interest are present in the database.</p>
+<p>Additionally, this ensures that the scientist can extract the intial summary table for publication purposes.</p>
 <ul class="simple">
 <li><dl class="simple">
-<dt>Allows the user to do an initial exploration of the data</dt><dd><ul>
-<li><p>defaults:</p></li>
+<dt>Summarise by this column(s):</dt><dd><ul>
+<li><p>defaults: mapped_region and Category</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 </ul>
+<p>Table</p>
+<ul class="simple">
+<li><p>summary statiscts based on the <strong>summarise by this column(s)</strong></p></li>
+<li><p>Table is downloaded as a .csv file</p></li>
+</ul>
+<p><strong>Bar plot</strong></p>
+<p>Purpose is to visulise the summary statistics of one column (x-axis) and coloured by a second variable if desired</p>
+<p>The user can start with either <strong>selecting all?</strong> based on the <em>X-axis:</em></p>
+<p>The user can then determine if they wish to filter out the variables within in the columns selected in <em>Filter by:</em></p>
+<p><em>note: see **bar plot*</em> side bar panel for customising the plot*</p>
+</section>
 </section>
 </section>
 <section id="conservation">
