@@ -1,9 +1,21 @@
-3. Analysis Section:
+3. Front-End: Analysis
 =======================
+
+The Cas13 Platform was developed for the rapid identification of highly conserved and potent guides for therapeutics.
+
+## Key Features
+- ✅ Run analyses interactively
+- ✅ Export results for downstream use
+
+## Supported Virus Genera
+- Sarbecovirus
+- Merbecovirus
+- Enterovirus A71
 
 .. note:: 
         Identify guides the Virologist, Immunologist etc. wishes to test
     
+
 
 Application structure
 ---------------------
@@ -12,19 +24,46 @@ The analysis section is divided into several sub-sections.
 - Overview
 - Conservation
 
-1. Overview
-^^^^^^^^^^^^^^^
 
-Side bar panel.
-- V
+Common Side Bar Features
+""""""""""""""""""""""""
+**Virus Genus** contains the list of viral genus/subgenus in the frontend database
+
+**Rule Type:** Showcases the types of rules processed. The defaults is the **GG** rule.
+
+Drop down menu
+''''''''''''''
+
+
+
+1. Overview
+^^^^^^^^^^^
+
+Common Side Bar Features
+""""""""""""""""""""""""
+
+
+
+
+Main panel 
+""""""""""
 
 tab 1. Guide Table Summary
-- the opening section shows the total number of guides presented for further filtering in the tool
+- the opening section shows the total number of guides presented for further filtering
 
 tab 2. Guide data
-- 
+- Allows the user to do an inital exploration of the data 
+  - defaults:
 
 
 2. Conservation 
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
+Side bar
+""""""""
+
+
+
+
+Main panel 
+""""""""""
