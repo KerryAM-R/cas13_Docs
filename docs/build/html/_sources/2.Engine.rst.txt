@@ -1,0 +1,24 @@
+2. Engine: Processing the Sequence data
+=======================================
+
+This process uses R scripts 
+
+.. note:: 
+    Prerequisite
+        - Sequences and required data already processed from the backend 
+
+
+1. Extract pattern
+	extract the 30bp segment (modular length)
+	Apply biological rule (3' CC == 5' GG)
+2. Hamming distance
+	tested in both R and Cpp (Cpp is faster ~40min for 200K GG based guides)
+	In blocks of 25 guides to keep the process speedy
+3. Mergin the hamming distance
+4. Exact Conservation
+5. Relaxed Conservation (uses output of 3 to reduce list)
+6. Annotating
+7. Reverse Complement
+8. Add in ML predictions
+9. Add in Reporter results
+10. Off-target effects
