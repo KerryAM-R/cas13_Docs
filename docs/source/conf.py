@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'STEGO.R'
+project = 'cas13.platform'
 copyright = '2021, Graziella'
 author = 'Mullan'
 
@@ -42,9 +42,3 @@ html_theme = "sphinx_rtd_theme"
 html_css_files = [
     'custom.css'
 ]
-
-html_logo = "logo-removebg-preview_green.png"
-html_theme_options = {
-    'logo_only': True,
-    'display_version': False,
-}
