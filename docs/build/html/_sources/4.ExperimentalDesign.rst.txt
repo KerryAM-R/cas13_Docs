@@ -1,0 +1,59 @@
+4. Experimental design
+=======================
+.. note::
+
+    This section requires the filtered table as the input from a single genus/subgenus 
+
+
+UI of the experimental Design
+------------------------------
+The analysis section is divided into several sub-sections. 
+
+- Upload the Guide table
+- Add in Adaptors 
+- Sequence (nt and protein)
+
+Uploaded files
+--------------
+
+Ensure that the user can see that their file has been uploaded to do either the 'adaptor' or x experimental design consideration
+
+Side bar
+^^^^^^^^
+
+
+
+Main panel 
+^^^^^^^^^^
+
+
+Add in Adaptors
+---------------
+
+If the research is wanting to use the x experimental approach, they can automate adding in their required adaptors to the sequence
+
+Side bar
+^^^^^^^^
+
+
+
+Main panel 
+^^^^^^^^^^
+
+
+Sequence (nt and protein)
+--------------------------
+
+This section aims to extract the protein coding genes for any given guide. This links back to the original sequence data base and extracts either the whole gene or a 150bp snippet 
+
+Side bar
+^^^^^^^^
+
+**Uploaded guides**
+
+
+
+Main panel 
+^^^^^^^^^^
+
+

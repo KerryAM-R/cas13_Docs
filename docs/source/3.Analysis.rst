@@ -1,0 +1,30 @@
+3. Analysis Section:
+=======================
+
+.. note:: 
+        Identify guides the Virologist, Immunologist etc. wishes to test
+    
+
+Application structure
+---------------------
+The analysis section is divided into several sub-sections. 
+
+- Overview
+- Conservation
+
+1. Overview
+^^^^^^^^^^^^^^^
+
+Side bar panel.
+- V
+
+tab 1. Guide Table Summary
+- the opening section shows the total number of guides presented for further filtering in the tool
+
+tab 2. Guide data
+- 
+
+
+2. Conservation 
+^^^^^^^^^^^^^^^^
+
