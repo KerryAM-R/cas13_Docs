@@ -51,21 +51,27 @@
 <li class="toctree-l1"><a class="reference internal" href="1.Backend.html">1. Backend</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2.Engine.html">2. Engine: Processing the Sequence data</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">3. Front-End: Analysis</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#key-features">Key Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#supported-virus-genera">Supported Virus Genera</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#application-structure">Application structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#common-side-bar-features">Common Side Bar Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#drop-down-menu">Drop down menu</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#overview">1. Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#key-features">Key Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#supported-virus-genera">Supported Virus Genera</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Common Side Bar Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#main-panel">Main panel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#conservation">2. Conservation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#application-structure">Application structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#common-side-bar-features">Common Side Bar Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#drop-down-menu-appearance-settings">Drop down menu: Appearance Settings</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#side-bar">Side bar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">Main panel</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">1. Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#side-bar-features">Side Bar Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main-panel">Main panel</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#conservation">2. Conservation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Side Bar Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Main panel</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="4.ExperimentalDesign.html">4. Front-End: Experimental design</a></li>
@@ -109,18 +115,18 @@
 <li><p>✅ Run analyses interactively</p></li>
 <li><p>✅ Export results for downstream use</p></li>
 </ul>
-</section>
 <section id="supported-virus-genera">
-<h2>Supported Virus Genera<a class="headerlink" href="#supported-virus-genera" title="Permalink to this heading"></a></h2>
-<ul class="simple">
-<li><p>Sarbecovirus</p></li>
-<li><p>Merbecovirus</p></li>
-<li><p>Enterovirus A71</p></li>
-</ul>
+<h3>Supported Virus Genera<a class="headerlink" href="#supported-virus-genera" title="Permalink to this heading"></a></h3>
+<p>Currently available Genera:
+- Sarbecovirus
+- Merbecovirus
+- Enterovirus A71</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Identify guides the Virologist, Immunologist etc. wishes to test</p>
+<p>Identify guides the Virologist, Immunologist etc. wishes to test.
+The application detects the current Genera in the database.</p>
 </div>
+</section>
 </section>
 <section id="application-structure">
 <h2>Application structure<a class="headerlink" href="#application-structure" title="Permalink to this heading"></a></h2>
@@ -128,41 +134,44 @@
 <li><p>Overview</p></li>
 <li><p>Conservation</p></li>
 </ul>
-</section>
 <section id="common-side-bar-features">
-<h2>Common Side Bar Features<a class="headerlink" href="#common-side-bar-features" title="Permalink to this heading"></a></h2>
+<h3>Common Side Bar Features<a class="headerlink" href="#common-side-bar-features" title="Permalink to this heading"></a></h3>
 <p><strong>Virus Genus</strong> contains the list of viral genus/subgenus in the frontend database</p>
 <p><strong>Rule Type:</strong> Showcases the types of rules processed. The default is the <strong>GG</strong> rule.</p>
+<section id="drop-down-menu-appearance-settings">
+<h4>Drop down menu: Appearance Settings<a class="headerlink" href="#drop-down-menu-appearance-settings" title="Permalink to this heading"></a></h4>
 </section>
-<section id="drop-down-menu">
-<h2>Drop down menu<a class="headerlink" href="#drop-down-menu" title="Permalink to this heading"></a></h2>
+</section>
+</section>
 <section id="overview">
-<h3>1. Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h3>
-</section>
-</section>
-<section id="id1">
-<h2>Common Side Bar Features<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<h2>1. Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<section id="side-bar-features">
+<h3>Side Bar Features<a class="headerlink" href="#side-bar-features" title="Permalink to this heading"></a></h3>
 </section>
 <section id="main-panel">
-<h2>Main panel<a class="headerlink" href="#main-panel" title="Permalink to this heading"></a></h2>
+<h3>Main panel<a class="headerlink" href="#main-panel" title="Permalink to this heading"></a></h3>
 <p>tab 1. Guide Table Summary
 - the opening section shows the total number of guides presented for further filtering</p>
-<p>tab 2. Guide data
-- Allows the user to do an initial exploration of the data</p>
-<blockquote>
-<div><ul class="simple">
+<p>tab 2. Guide data:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Allows the user to do an initial exploration of the data</dt><dd><ul>
 <li><p>defaults:</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+</section>
 <section id="conservation">
-<h3>2. Conservation<a class="headerlink" href="#conservation" title="Permalink to this heading"></a></h3>
-</section>
-</section>
-<section id="side-bar">
-<h2>Side bar<a class="headerlink" href="#side-bar" title="Permalink to this heading"></a></h2>
+<h2>2. Conservation<a class="headerlink" href="#conservation" title="Permalink to this heading"></a></h2>
+<section id="id1">
+<h3>Side Bar Features<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 </section>
 <section id="id2">
-<h2>Main panel<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<h3>Main panel<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+</section>
 </section>
 </section>
 

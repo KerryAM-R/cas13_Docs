@@ -10,14 +10,17 @@ Key Features
 - ✅ Export results for downstream use
 
 Supported Virus Genera
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
+Currently available Genera:
 - Sarbecovirus
 - Merbecovirus
 - Enterovirus A71
 
 .. note::
-   Identify guides the Virologist, Immunologist etc. wishes to test
+   
+   Identify guides the Virologist, Immunologist etc. wishes to test. 
+   The application detects the current Genera in the database. 
 
 Application structure
 ---------------------
@@ -26,36 +29,40 @@ Application structure
 - Conservation
 
 Common Side Bar Features
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Virus Genus** contains the list of viral genus/subgenus in the frontend database
 
 **Rule Type:** Showcases the types of rules processed. The default is the **GG** rule.
 
-Drop down menu
---------------
+Drop down menu: Appearance Settings
+"""""""""""""""""""""""""""""""""""
+
+
+
 
 1. Overview
-^^^^^^^^^^^
+-----------
 
-Common Side Bar Features
-------------------------
+Side Bar Features
+^^^^^^^^^^^^^^^^^
 
 Main panel
-----------
+^^^^^^^^^^
 
 tab 1. Guide Table Summary
 - the opening section shows the total number of guides presented for further filtering
 
-tab 2. Guide data
+tab 2. Guide data:
+
 - Allows the user to do an initial exploration of the data
-  - defaults:
+   + defaults:
 
 2. Conservation
-^^^^^^^^^^^^^^^
+---------------
 
-Side bar
---------
+Side Bar Features
+^^^^^^^^^^^^^^^^^
 
 Main panel
-----------
+^^^^^^^^^^
