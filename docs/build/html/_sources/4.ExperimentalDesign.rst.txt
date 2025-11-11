@@ -78,6 +78,9 @@ Rule Type:
 Ref anno:
 - The sequence is for the exact match 
 
+Add metadata
+- The user can select to include the metadata in the table
+- Default: Selected
 
 Main panel 
 ^^^^^^^^^^
