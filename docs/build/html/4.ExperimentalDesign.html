@@ -121,9 +121,11 @@
 <p>Ensure that the user can see that their file has been uploaded to do either the ‘adaptor’ or x experimental design consideration</p>
 <section id="side-bar">
 <h3>Side bar<a class="headerlink" href="#side-bar" title="Permalink to this heading"></a></h3>
+<p>Upload the TSV files from the “Fitlered Table” or “Motif Tab” in the conservation</p>
 </section>
 <section id="main-panel">
 <h3>Main panel<a class="headerlink" href="#main-panel" title="Permalink to this heading"></a></h3>
+<p>Renders the uploaded table</p>
 </section>
 </section>
 <section id="add-in-adaptors">
@@ -131,20 +133,51 @@
 <p>If the research is wanting to use the x experimental approach, they can automate adding in their required adaptors to the sequence</p>
 <section id="id1">
 <h3>Side bar<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>5’ Adaptor:
+- The user can select the sequence to add to the guide
+- Default: CACC</p>
+<p>3’ Adaptor
+- The user can select the sequence to add to the guide
+- Default: CAAC</p>
 </section>
 <section id="id2">
 <h3>Main panel<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<p>Showcases a table with: plate, loc (location), Gudie_name and guide_sequence</p>
+<p>This process automatally adds in the adaptors for the forward and reverse sequence</p>
+<p>It ensure that the location is defined based on a 96 well plate (A to H and 1-12)</p>
+<p>If there is more than 1 plate worth it will restart the number at A1 to H12.</p>
 </section>
 </section>
 <section id="sequence-nt-and-protein">
 <h2>Sequence (nt and protein)<a class="headerlink" href="#sequence-nt-and-protein" title="Permalink to this heading"></a></h2>
-<p>This section aims to extract the protein coding genes for any given guide. This links back to the original sequence data base and extracts either the whole gene or a 150bp snippet.</p>
+<p>This section aims to extract the protein coding genes for any given guide. This links back to the original sequence database and extracts either the whole gene or a 150bp snippet.</p>
 <section id="id3">
 <h3>Side bar<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
-<p><strong>Uploaded guides</strong></p>
+<p>Upload Gudies:
+- list the guide present from the uploaded table</p>
+<p>Virus genus:
+- Select the genus as this links to the backend sequence data</p>
+<p>Rule Type:
+- Type of rule applied from the original processing (e.g., GG)</p>
+<p>Ref anno:
+- The sequence is for the exact match</p>
 </section>
 <section id="id4">
 <h3>Main panel<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<p>The Table shows the process data of extracting one sequence per exact and near matches. It also extracts one sequence that is a no-match</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Location:</dt><dd><ul>
+<li><p>This is to altered the rough location of the no-match guide</p></li>
+<li><p>The user can alter the number to find the lowest edit distance. This is usually within the starting location  U+000B1 3nt</p></li>
+<li><p>Default: 60</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The user can download the table that includes the guide, the complete protein coding seuqence, and the segment (150bp), as well as where the gene occured in the selected genome sequence</p>
+<p>This will enable testing of the conservation in reporter setting where the native virus sequence is not accessible (e.g., strain is only present in animal reserviour)</p>
 </section>
 </section>
 </section>

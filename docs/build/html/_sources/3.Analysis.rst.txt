@@ -460,8 +460,23 @@ To understand the overall coverage of any given guide in the phylogenetic tree. 
 
 - The user can customise the graph sidebar panel **Tree** 
 
+- The user can collapse the tree in the area's of high redundancy
+    - However, there may still be near matches present in some of these highly similar sequences
+
+- The graph has the Title as the Guide sequence and prints the Predicted silencing
+
+- Features of the Graph:
+    - inner area is the phylogenetic tree
+    - Middle bar graph is the coverage of the guide: exact, near and no_match
+    - Outer layer is based on the **Tree lable** with the default being the Genus
 
 Tree Guide Matches
 """"""""""""""""""
 
+This table showcases where the guide mapped to. This enables the reserach to check the species of origin, (e.g., Bat in Sarbecovirus) and allows them to go back to the NCBI website if they wish to look at additional inforamtion not present in this tool. 
+
+- The Defaults:
+    - ID: the NCBI numeric search ID
+    - Organism: NCBI organism classification 
+    - Acession_ID: NCBI accession ID
 

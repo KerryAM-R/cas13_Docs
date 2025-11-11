@@ -21,11 +21,12 @@ Ensure that the user can see that their file has been uploaded to do either the 
 Side bar
 ^^^^^^^^
 
-
+Upload the TSV files from the "Fitlered Table" or "Motif Tab" in the conservation 
 
 Main panel 
 ^^^^^^^^^^
 
+Renders the uploaded table
 
 Add in Adaptors
 ---------------
@@ -35,25 +36,64 @@ If the research is wanting to use the x experimental approach, they can automate
 Side bar
 ^^^^^^^^
 
+5' Adaptor:
+- The user can select the sequence to add to the guide
+- Default: CACC
+
+3' Adaptor
+- The user can select the sequence to add to the guide
+- Default: CAAC
 
 
 Main panel 
 ^^^^^^^^^^
+
+
+Showcases a table with: plate, loc (location), Gudie_name and guide_sequence
+
+This process automatally adds in the adaptors for the forward and reverse sequence
+
+It ensure that the location is defined based on a 96 well plate (A to H and 1-12)
+
+If there is more than 1 plate worth it will restart the number at A1 to H12. 
 
 
 Sequence (nt and protein)
 --------------------------
 
-This section aims to extract the protein coding genes for any given guide. This links back to the original sequence data base and extracts either the whole gene or a 150bp snippet.
+This section aims to extract the protein coding genes for any given guide. This links back to the original sequence database and extracts either the whole gene or a 150bp snippet.
 
 Side bar
 ^^^^^^^^
 
+Upload Gudies:
+- list the guide present from the uploaded table
 
-**Uploaded guides**
+Virus genus:
+- Select the genus as this links to the backend sequence data
 
+Rule Type:
+- Type of rule applied from the original processing (e.g., GG)
+
+Ref anno:
+- The sequence is for the exact match 
+
+Add metadata
+- The user can select to include the metadata in the table
+- Default: Selected
 
 Main panel 
 ^^^^^^^^^^
+
+The Table shows the process data of extracting one sequence per exact and near matches. It also extracts one sequence that is a no-match
+
+- Location:
+    - This is to altered the rough location of the no-match guide
+    - The user can alter the number to find the lowest edit distance. This is usually within the starting location  U+000B1 3nt
+    - Default: 60
+
+The user can download the table that includes the guide, the complete protein coding seuqence, and the segment (150bp), as well as where the gene occured in the selected genome sequence
+
+This will enable testing of the conservation in reporter setting where the native virus sequence is not accessible (e.g., strain is only present in animal reserviour)
 
 
