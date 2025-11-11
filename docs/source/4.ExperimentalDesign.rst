@@ -89,7 +89,7 @@ The Table shows the process data of extracting one sequence per exact and near m
 
 - Location:
     - This is to altered the rough location of the no-match guide
-    - The user can alter the number to find the lowest edit distance. This is usually within the starting location  U+000B1 3nt
+    - The user can alter the number to find the lowest edit distance. This is usually within the starting location ±3nt
     - Default: 60
 
 The user can download the table that includes the guide, the complete protein coding seuqence, and the segment (150bp), as well as where the gene occured in the selected genome sequence
