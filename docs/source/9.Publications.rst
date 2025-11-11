@@ -1,5 +1,5 @@
-Publications and citations
-==========================
+10. Publications and citations
+===============================
 
 **Citing Platform Pipeline**
 ------------------------------------
