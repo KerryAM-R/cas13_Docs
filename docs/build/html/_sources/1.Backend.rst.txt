@@ -1,4 +1,4 @@
-1. Backend
+2. Backend
 ==================
 
 This section describes how the sequences were processed from NCBI to local database with the necessary information required for the Engine 
@@ -28,6 +28,8 @@ Run the following lines in R. A window will opened that runs the backend shiny R
 You are now ready to retrive the seuqence data from NCBI or from your own references
 
 1. Create the databases (SQLite and JSON)
+   - The user will see 
+
 	Designed for Viruses
 	Next version will also be created for Bacteria and Human
 2. Extract the IDs from NCBI based on term list

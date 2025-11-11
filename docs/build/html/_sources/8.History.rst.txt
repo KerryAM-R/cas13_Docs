@@ -1,5 +1,5 @@
-History
-=======
+9. History
+===========
 **Version 1.0**
 ---------------
 **Major additions**
@@ -11,19 +11,9 @@ History
 
 **Bug Fixes**
 
-    Fixed program not opening if the user was not working in the project file. Removed the need to find the custom_db folder and sub-folders.
+    
 
 **minor changes**
 
-    Change the layout coloring to purple and better highlighting the active tab.
-
-    Also, added in changing colour when hovering over the buttons.
-
-    Add in coloring to better see if the list variable colour was selected and hovering to more accurately pick the list variables. 
-
-    Added in heatmap figures for the top clonotype section (re-labelled to clonal abudance). 
-
-    Removed redundant packages. 
-
-    Fixed some figure download issues. 
+    
 

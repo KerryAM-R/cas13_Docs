@@ -1,7 +1,9 @@
-3. Front-End: Analysis
+4. Front-End: Analysis
 =======================
 
 The Cas13 Platform was developed for the rapid identification of highly conserved and potent guides for therapeutics.
+
+We have created a website to run the already processed data: 
 
 Key Features
 ------------
@@ -135,6 +137,7 @@ Bar Plot
 
 - Log Transform the counts?
     - Can use a log10 transformation of the count data so the extreme variables are less obvious 
+
     - *Note: those with n=1 will be 0 with log10 when transformation*
 
 - Filter by: 
