@@ -60,6 +60,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#drop-down-menu-appearance-settings">Drop down menu: Appearance Settings</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#common-main-panel-features">Common Main Panel Features</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">1. Overview</a><ul>
@@ -309,6 +310,20 @@ The application detects the current Genera in the database.</p>
 </ul>
 </section>
 </section>
+<section id="common-main-panel-features">
+<h3>Common Main Panel Features<a class="headerlink" href="#common-main-panel-features" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Each tab in the main panel will either have one graph or table. This is to ensure that the side bar panel remains next to the graph</p></li>
+<li><dl class="simple">
+<dt>All graphs can be downloaded either as a PDF or PNG</dt><dd><ul>
+<li><p>PDF: Width and height can be altered</p></li>
+<li><p>PNG: Width, height and resolution can be altered</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
 </section>
 <section id="overview">
 <h2>1. Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
@@ -401,27 +416,333 @@ The application detects the current Genera in the database.</p>
 <h3>Side Bar Features<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
 <section id="gene-filter">
 <h4>Gene Filter<a class="headerlink" href="#gene-filter" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Filter to Category?</dt><dd><ul>
+<li><p>The user can select if they would like to remove the broader categorical data</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Types of categories:</dt><dd><ul>
+<li><p>PC (Protein-Coding)</p></li>
+<li><p>NPC (Non-Protein-Coding; untrasnlated region[UTR] or intragenic)</p></li>
+<li><dl class="simple">
+<dt>overlapping segment (contains multiple categories)</dt><dd><ul>
+<li><p>This is based on the genomic order relative to the reference</p></li>
+<li><p>If the gene overlapped the UTR and protein it would shoe in the mapped_region <em>UTR’5, ORF1a</em> or if it was protein-intregenic-protien, as <em>S, intragenic, N</em></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Not mapped (NCBI did not include an annotation and our alignment tool could not determine the mapping)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Select All Genes?</dt><dd><ul>
+<li><p>The user can select which genes that they want to include in their anaysis that is automatically rendered in the “Selected Gene(s):”</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Selected Gene(s):</dt><dd><ul>
+<li><p>shows the user which variables have been selected</p></li>
+<li><p>The user can add/delete the variables of interest</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Filter to Plotly Selection</dt><dd><ul>
+<li><p>This checkbox is automatically selected when the user clicks the conservarion graph area</p></li>
+<li><p>It unselects when either the <strong>Virus Genus</strong> or <strong>Rule</strong> is changed</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 <section id="additional-filters">
 <h4>Additional Filters<a class="headerlink" href="#additional-filters" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Filter Mean Prediction?</dt><dd><ul>
+<li><p>The user, if they wish, to filter to the mean silencing predictions</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Model to Filter:</dt><dd><ul>
+<li><p>the user can select the type of machine learning model</p></li>
+<li><dl class="simple">
+<dt>Default: mean_pred</dt><dd><ul>
+<li><p>Included: mean_pred (mean of the three top models), lasso (linear), CNN (neural network) and LSTM (neural network)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Filter to reference?</dt><dd><ul>
+<li><p>Depending on the goals of the user, they may wish to restrict the guide list to exactly match a reference</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Selected reference</dt><dd><ul>
+<li><p>The user can select the reference sequence</p></li>
+<li><p>Sarbecovirus default: NC_045512.2 which is the Wuhan reference strain</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Sort by:</dt><dd><ul>
+<li><p>This will order the <strong>Filtered Table</strong> list of the guides</p></li>
+<li><p>Default: mean_pred</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Limited total per mapped_region?</dt><dd><ul>
+<li><p>the user may only wish to keep guides to a restricted total</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Filter by:</dt><dd><ul>
+<li><p>if the user wishes to restrict to a total per mapped_region. This column selects the feature for the order</p></li>
+<li><p>Default: mean_pred</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Max per mapped_region</dt><dd><ul>
+<li><p>total number of guides for a given mapped_region</p></li>
+<li><p>Default: 10</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 <section id="summary">
 <h4>Summary<a class="headerlink" href="#summary" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Y-axis column:</dt><dd><ul>
+<li><p>The user can change what the y-axis is labelled as</p></li>
+<li><p>Default: mapped_region</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Dot size</dt><dd><ul>
+<li><p>the user can visulise the dot size of any of the ML models</p></li>
+<li><p>Default: mean_pred</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>X-axis to display</dt><dd><ul>
+<li><dl class="simple">
+<dt>the user can select which form of conservation was calculated</dt><dd><ul>
+<li><p>Either exact or near</p></li>
+<li><p>Sequence (seq), taxon (tax) or species</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 <section id="conservation-parameters">
 <h4>Conservation Parameters<a class="headerlink" href="#conservation-parameters" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Conservation Type:</dt><dd><ul>
+<li><p>The user can select if the conservation was based on sequence, taxon or species depending on their research question</p></li>
+<li><p>Default: Sequence conservation, based on the genus</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Dot Size</dt><dd><ul>
+<li><p>The user can increase or decrease the size of the dots</p></li>
+<li><p>Default: 2</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 <section id="silencing">
 <h4>Silencing<a class="headerlink" href="#silencing" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>y-axis</dt><dd><ul>
+<li><p>The user can select if they view the data as the mapped_region, category or genus</p></li>
+<li><p>Default: mapped_region</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 <section id="guide-loc">
 <h4>Guide Loc.<a class="headerlink" href="#guide-loc" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Split by mapped_region</dt><dd><ul>
+<li><p>The user can visualise the <strong>Guide Location</strong> per the mapped_region or, if unselected, as the spatial relationship of guides</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Re-level guides?</dt><dd><ul>
+<li><p>In the Engine the levels are created to space out guides that overlap, and is time consuming in the whole dataset. Therefore we pre-calcualted the levels</p></li>
+<li><p>After filtering to only a handful of guides, it maybe be worth releveling the graph, especially if there are few to no overlapping guides</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Height of guide:</dt><dd><ul>
+<li><p>The user can increase the height of the Bar</p></li>
+<li><p>Default: 2</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 <section id="motif">
 <h4>Motif<a class="headerlink" href="#motif" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Choose colour Palette:</dt><dd><ul>
+<li><dl class="simple">
+<dt>The user can chose to change the colour of the ATCG in the motif plot</dt><dd><ul>
+<li><p>Contains: Default, palettes (various), or custom</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Logo Palette</dt><dd><ul>
+<li><p>Lists all of the available palettes</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Custom:</dt><dd><ul>
+<li><p>can change the individual colours of A, T, G, C</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 <section id="tree">
 <h4>Tree<a class="headerlink" href="#tree" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Select Reference:</dt><dd><ul>
+<li><p>The user can select which reference to highlight on the phylogenetic tree plot</p></li>
+<li><p>Sarbecovirus default: NC_045512.2 which is the Wuhan reference strain</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Tree Label:</dt><dd><ul>
+<li><p>The user can chose how to label the outer most bar graph</p></li>
+<li><p>Default: Genus</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Tree Layout:</dt><dd><ul>
+<li><p>The user can select what sort of layout of the phylogenetic tree. These are based on the ‘ape’ R package</p></li>
+<li><p>Default: circular</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Tree edge thickness:</dt><dd><ul>
+<li><p>The line thickness of the phylogenetic tree</p></li>
+<li><p>Default: 0.2</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Edge Colour</dt><dd><ul>
+<li><p>Colour of the lines</p></li>
+<li><p>Default: black</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Bar thickness</dt><dd><ul>
+<li><p>Thickens of the inner and outer bar plots</p></li>
+<li><p>default 0.05</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Astrix</dt><dd><ul>
+<li><p>This highlights on the phylognetic tree the node of the selected reference</p></li>
+<li><p>Default: Orange</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Astrix size</dt><dd><ul>
+<li><p>size of the astrix on the phylogenetic tree</p></li>
+<li><p>Default: 10</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>List of the colours of the conservation</dt><dd><ul>
+<li><p>Exact (red), near (orange), no_match (light grey)</p></li>
+<li><p>Rest of the colours are based on <strong>Tree label</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 </section>
 <section id="id2">

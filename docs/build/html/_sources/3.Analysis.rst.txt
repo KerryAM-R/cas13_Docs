@@ -109,6 +109,15 @@ Drop down menu: Appearance Settings
 - List of variables that can be coloured
     - Users can update the list as required 
 
+Common Main Panel Features
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Each tab in the main panel will either have one graph or table. This is to ensure that the side bar panel remains next to the graph
+
+- All graphs can be downloaded either as a PDF or PNG
+    - PDF: Width and height can be altered
+    - PNG: Width, height and resolution can be altered 
+
 1. Overview
 -----------
 
@@ -186,36 +195,169 @@ Side Bar Features
 Gene Filter
 """""""""""
 
+- Filter to Category?
+    - The user can select if they would like to remove the broader categorical data
+       
+
+- Types of categories:
+    - PC (Protein-Coding)
+    - NPC (Non-Protein-Coding; untrasnlated region[UTR] or intragenic)
+    - overlapping segment (contains multiple categories)
+        - This is based on the genomic order relative to the reference
+        - If the gene overlapped the UTR and protein it would shoe in the mapped_region *UTR'5, ORF1a* or if it was protein-intregenic-protien, as *S, intragenic, N*
+    -  Not mapped (NCBI did not include an annotation and our alignment tool could not determine the mapping)
+
+- Select All Genes?
+    - The user can select which genes that they want to include in their anaysis that is automatically rendered in the "Selected Gene(s):"
+
+- Selected Gene(s):
+    - shows the user which variables have been selected
+    - The user can add/delete the variables of interest 
+
+- Filter to Plotly Selection
+    - This checkbox is automatically selected when the user clicks the conservarion graph area
+    - It unselects when either the **Virus Genus** or **Rule** is changed
+
+
 Additional Filters
 """"""""""""""""""
+
+- Filter Mean Prediction?
+    - The user, if they wish, to filter to the mean silencing predictions
+
+- Model to Filter:
+    - the user can select the type of machine learning model
+    - Default: mean_pred
+        - Included: mean_pred (mean of the three top models), lasso (linear), CNN (neural network) and LSTM (neural network)
+
+- Filter to reference?
+    - Depending on the goals of the user, they may wish to restrict the guide list to exactly match a reference
+
+- Selected reference 
+    - The user can select the reference sequence
+    - Sarbecovirus default: NC_045512.2 which is the Wuhan reference strain 
+
+- Sort by: 
+    - This will order the **Filtered Table** list of the guides 
+    - Default: mean_pred
+
+- Limited total per mapped_region?
+    - the user may only wish to keep guides to a restricted total 
+
+- Filter by:
+    - if the user wishes to restrict to a total per mapped_region. This column selects the feature for the order 
+    - Default: mean_pred
+
+- Max per mapped_region
+    - total number of guides for a given mapped_region
+    - Default: 10
 
 Summary
 """""""
 
+- Y-axis column:
+    - The user can change what the y-axis is labelled as
+    - Default: mapped_region
+
+- Dot size
+    - the user can visulise the dot size of any of the ML models
+    - Default: mean_pred
+
+- X-axis to display
+    - the user can select which form of conservation was calculated 
+        - Either exact or near
+        - Sequence (seq), taxon (tax) or species 
+
 Conservation Parameters
 """""""""""""""""""""""
+
+- Conservation Type:
+    - The user can select if the conservation was based on sequence, taxon or species depending on their research question
+    - Default: Sequence conservation, based on the genus
+
+- Dot Size 
+    - The user can increase or decrease the size of the dots
+    - Default: 2
 
 Silencing
 """""""""
 
+- y-axis
+    - The user can select if they view the data as the mapped_region, category or genus
+    - Default: mapped_region
+
 Guide Loc. 
 """"""""""
+
+- Split by mapped_region
+    - The user can visualise the **Guide Location** per the mapped_region or, if unselected, as the spatial relationship of guides
+
+- Re-level guides?
+    - In the Engine the levels are created to space out guides that overlap, and is time consuming in the whole dataset. Therefore we pre-calcualted the levels
+    - After filtering to only a handful of guides, it maybe be worth releveling the graph, especially if there are few to no overlapping guides
+
+- Height of guide:
+    - The user can increase the height of the Bar
+    - Default: 2
 
 Motif
 """""
 
+- Choose colour Palette:
+    - The user can chose to change the colour of the ATCG in the motif plot
+        - Contains: Default, palettes (various), or custom  
+    - Logo Palette 
+        - Lists all of the available palettes
+    - Custom:
+        - can change the individual colours of A, T, G, C
+
+
 Tree
 """"
 
+- Select Reference:
+    - The user can select which reference to highlight on the phylogenetic tree plot
+    - Sarbecovirus default: NC_045512.2 which is the Wuhan reference strain 
 
+- Tree Label:
+    - The user can chose how to label the outer most bar graph
+    - Default: Genus
 
+- Tree Layout:
+    - The user can select what sort of layout of the phylogenetic tree. These are based on the 'ape' R package
+    - Default: circular
 
+- Tree edge thickness:
+    - The line thickness of the phylogenetic tree
+    - Default: 0.2
+
+- Edge Colour
+    - Colour of the lines
+    - Default: black
+
+- Bar thickness
+    - Thickens of the inner and outer bar plots 
+    - default 0.05
+
+- Astrix
+    - This highlights on the phylognetic tree the node of the selected reference
+    - Default: Orange
+
+- Astrix size
+    - size of the astrix on the phylogenetic tree
+    - Default: 10
+
+- List of the colours of the conservation 
+    - Exact (red), near (orange), no_match (light grey)
+    - Rest of the colours are based on **Tree label**
 
 Main panel
 ^^^^^^^^^^
 
 Balloon Plot (Summary)
 """"""""""""""""""""""
+
+
 
 Dot Plotly (Conservation)
 """""""""""""""""""""""""
@@ -241,3 +383,5 @@ Pylogenetic Tree
 
 Tree Guide Matches
 """"""""""""""""""
+
+
