@@ -406,7 +406,7 @@ The application detects the current Genera in the database.</p>
 <p>Purpose is to visulise the summary statistics of one column (x-axis) and coloured by a second variable if desired</p>
 <p>The user can start with either <strong>selecting all?</strong> based on the <em>X-axis:</em></p>
 <p>The user can then determine if they wish to filter out the variables within in the columns selected in <em>Filter by:</em></p>
-<p><em>note: see **bar plot*</em> side bar panel for customising the plot*</p>
+<p><em>note: see</em> <strong>bar plot</strong> <em>side bar panel for customising the plot</em></p>
 </section>
 </section>
 </section>
@@ -747,29 +747,128 @@ The application detects the current Genera in the database.</p>
 </section>
 <section id="id2">
 <h3>Main panel<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<p>The main panel is structure for exploring and filtering the guide data to extract the guides of interest</p>
+<ul class="simple">
+<li><p>Summary</p></li>
+<li><p>Conservation</p></li>
+<li><p>Silencing</p></li>
+<li><p>Off-Target</p></li>
+<li><p>Filtered Table</p></li>
+<li><p>Guide Location</p></li>
+<li><p>Motif</p></li>
+<li><p>Phylogenetic Tree</p></li>
+<li><p>Tree Guides Matches</p></li>
+</ul>
 <section id="balloon-plot-summary">
 <h4>Balloon Plot (Summary)<a class="headerlink" href="#balloon-plot-summary" title="Permalink to this heading"></a></h4>
+<p>This is the summary of the guide data of the genomic sequence and conservation. This allows the user to explore which genes or regions are conserved and if they wish to proceed with guide selection.</p>
+<ul class="simple">
+<li><p>top bar to showcase the specific values of a ‘clicked on’ guide</p></li>
+<li><dl class="simple">
+<dt>Main balloon plot</dt><dd><ul>
+<li><p>The default of the mapped_region (genomic order based on the reference e.g., NC_045512.2 Wuhan reference strain ) vs the conservation (sequence)</p></li>
+<li><p>See side bar panel <strong>Summary</strong> and <strong>Appearance Settings</strong> to customise the graph</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 <section id="dot-plotly-conservation">
 <h4>Dot Plotly (Conservation)<a class="headerlink" href="#dot-plotly-conservation" title="Permalink to this heading"></a></h4>
+<p>This graph showcases the conservation of the exact (x-axis) vs near (y-axis) matches</p>
+<ul class="simple">
+<li><p>Each dot represents a unique guide</p></li>
+<li><p>top bar to showcase the specific values of a ‘clicked on’ guide</p></li>
+<li><p>The user can select the region on the graph of interest for the first filtering stage</p></li>
+<li><p>The graph will show the outcomes of the filtering choices from <strong>Gene Filter</strong> in the side bar column (automatically opens on this tab)</p></li>
+</ul>
 </section>
 <section id="balloon-plot-silencing">
 <h4>Balloon Plot (Silencing)<a class="headerlink" href="#balloon-plot-silencing" title="Permalink to this heading"></a></h4>
+<p>This section showcases the predicted silencing of any given guide</p>
+<ul class="simple">
+<li><p>The x-axis show the silencing (0 to 1). 1 = predicted to have high silencing and 0 = no silencing</p></li>
+<li><p>The y-axis is the remaining mapped_regions from the previous section</p></li>
+<li><p>Tick the <strong>Filter Mean</strong> if you wish to use this parameter in the <strong>Additional Fitlers</strong></p></li>
+<li><p>For customising the y-axis look under the “Silencing” section in the side bar panel</p></li>
+</ul>
 </section>
 <section id="off-target">
 <h4>Off-Target<a class="headerlink" href="#off-target" title="Permalink to this heading"></a></h4>
+<p>To ensure that off-target effects are limited, we pre-calculated if the guides could potentially map to the hg38 build of the human transcriptome. The guides were blasted against the human transcriptome using the “Blastn” function. However, a limitation of this is the matched regions are sequential rather than sporatic. So, partial matches may still exist.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>List to remove as potential off-target effects</dt><dd><ul>
+<li><p>The user can select which sort of ‘off-target’ mismatches need to be selected.</p></li>
+<li><p>The categories are mismatches and or gap idenification</p></li>
+<li><p>Default: up to 5 mismatchs and 2 nt gaps present</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>the user needs to unselect the <strong>Remove human hits (off-target)?</strong> if they do not wish to include this setting</p></li>
+</ul>
 </section>
 <section id="filtered-table">
 <h4>Filtered Table<a class="headerlink" href="#filtered-table" title="Permalink to this heading"></a></h4>
+<p>This table shows how many guides remain after conservation, silencing and off-target filtering</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Additional filters:</dt><dd><ul>
+<li><p>Filter to reference</p></li>
+<li><p>Limit total per mapped_region</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>OThe user Parameters</dt><dd><ul>
+<li><p>see <strong>Additional Filters</strong></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The final list of guides for the remaining analysis</p>
+<p>The downloaded Table can be used for the <strong>Experimental Design</strong> section</p>
 </section>
 <section id="guide-location">
 <h4>Guide Location<a class="headerlink" href="#guide-location" title="Permalink to this heading"></a></h4>
+<p>This section showcases the location of the guide in the genome. Each bar is 30bp long.</p>
+<ul class="simple">
+<li><p>The Default is to split the grpah by the mapped_region</p></li>
+<li><p>The user may decided to go back and refine which genes/regions to select, if needed before doing each guide specific interrogation</p></li>
+</ul>
 </section>
 <section id="id3">
 <h4>Motif<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h4>
+<p>The user will need to click the “Load Guides” in the side bar panel to render those remaining from the Filtered Table, which will render the list in the “Select Guide:”</p>
+<p>The order of the Gudies will be based on <strong>Sort by:</strong> in the <strong>Additional Filters</strong> section.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The motif plot(s)</dt><dd><ul>
+<li><p>Top: The selected guide</p></li>
+<li><p>Bottom: the Target sequence (e.g., Genomic sequence in +sense single strandard RNA virus) that inclues the exact as well as near matches for what the guide will potentially conservarion</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Table</dt><dd><ul>
+<li><p>All associated information of the guide in the motif plot</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
 <section id="pylogenetic-tree">
 <h4>Pylogenetic Tree<a class="headerlink" href="#pylogenetic-tree" title="Permalink to this heading"></a></h4>
+<p>To understand the overall coverage of any given guide in the phylogenetic tree. The tree was built in iqTree based on the whole sequence.</p>
+<ul class="simple">
+<li><p>The user can customise the graph sidebar panel <strong>Tree</strong></p></li>
+</ul>
 </section>
 <section id="tree-guide-matches">
 <h4>Tree Guide Matches<a class="headerlink" href="#tree-guide-matches" title="Permalink to this heading"></a></h4>
