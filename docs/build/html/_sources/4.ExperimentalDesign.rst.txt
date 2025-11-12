@@ -1,4 +1,4 @@
-4. Front-End: Experimental design
+5. Front-End: Experimental design
 =================================
 .. note::
 
