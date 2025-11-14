@@ -20,6 +20,13 @@ Supported Virus Genera
 - Merbecovirus
 - Enterovirus A71
 
+**Currently availble Rule Types:**
+ 
+- GG 
+- NCP1 (Published Guide for SARS-CoV-2)
+- ref (Collaborator request to ensure all the processed data guides exactly matched an in-house reference sequence)
+
+
 .. note::
    
    Identify guides the Virologist, Immunologist etc. wishes to test. 
