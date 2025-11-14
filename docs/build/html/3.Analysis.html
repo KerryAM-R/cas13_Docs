@@ -47,28 +47,6 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="0.Overview.html">Overview</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="0.Overview.html#contents">Contents</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="0.Installation.html">1. Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1.Backend.html">2. Backend</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2.Engine.html">3. Engine: Processing the Sequence data</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">4. Front-End: Analysis</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#key-features">Key Features</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#application-structure">Application structure</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#overview">1. Overview</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#conservation">2. Conservation</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="4.ExperimentalDesign.html">5. Front-End: Experimental design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="5.UserTips.html">6. User Tips for the analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="6.FAQ.html">7. Frequenctly Asked Questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="7.Tutorial.html">8. Tutorial</a></li>
-<li class="toctree-l3"><a class="reference internal" href="8.History.html">9. History</a></li>
-<li class="toctree-l3"><a class="reference internal" href="9.Publications.html">10. Publications and citations</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="0.Installation.html">1. Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1.Backend.html">2. Backend</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2.Engine.html">3. Engine: Processing the Sequence data</a></li>
@@ -97,28 +75,27 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#conservation">2. Conservation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#analysis">2. Analysis</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id1">Side Bar Features</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#gene-filter">Gene Filter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#additional-filters">Additional Filters</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#conservation-parameters">Conservation Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gene-filter">Gene Filter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#silencing">Silencing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#off-target">Off-Target</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#selected-guide-s">Selected Guide(s)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conservation-parameters">Conservation Parameters</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#guide-loc">Guide Loc.</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#motif">Motif</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tree">Tree</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">Main panel</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#balloon-plot-summary">Balloon Plot (Summary)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#dot-plotly-conservation">Dot Plotly (Conservation)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#balloon-plot-silencing">Balloon Plot (Silencing)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#off-target">Off-Target</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#filtered-table">Filtered Table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conservation">Conservation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Silencing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Off-Target</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Selected Guide(s)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#guide-location">Guide Location</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">Motif</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pylogenetic-tree">Pylogenetic Tree</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tree-guide-matches">Tree Guide Matches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#coverage">Coverage</a></li>
 </ul>
 </li>
 </ul>
@@ -147,7 +124,6 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="0.Overview.html">Overview</a></li>
       <li class="breadcrumb-item active">4. Front-End: Analysis</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/3.Analysis.rst.txt" rel="nofollow"> View page source</a>
@@ -418,7 +394,7 @@ The application detects the current Genera in the database.</p>
 </section>
 <section id="guide-summary">
 <h4>Guide Summary<a class="headerlink" href="#guide-summary" title="Permalink to this heading"></a></h4>
-<p><strong>Table</strong></p>
+<p><strong>Summary Table</strong></p>
 <p>Allows the user to do an initial exploration of the data and see if their proteins and/or regions of interest are present in the database.</p>
 <p>Additionally, this ensures that the scientist can extract the intial summary table for publication purposes.</p>
 <ul class="simple">
@@ -436,7 +412,7 @@ The application detects the current Genera in the database.</p>
 <li><p>Table is downloaded as a .csv file</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/0.Guide_summary_table.png"><img alt="Alternative text" src="_images/0.Guide_summary_table.png" style="width: 800px;" /></a>
-<p><strong>Bar plot</strong></p>
+<p><strong>Summary plot</strong></p>
 <p>Purpose is to visulise the summary statistics of one column (x-axis) and coloured by a second variable if desired</p>
 <p>The user can start with either <strong>selecting all?</strong> based on the <em>X-axis:</em></p>
 <p>The user can then determine if they wish to filter out the variables within in the columns selected in <em>Filter by:</em></p>
@@ -444,10 +420,45 @@ The application detects the current Genera in the database.</p>
 </section>
 </section>
 </section>
-<section id="conservation">
-<h2>2. Conservation<a class="headerlink" href="#conservation" title="Permalink to this heading"></a></h2>
+<section id="analysis">
+<h2>2. Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading"></a></h2>
 <section id="id1">
 <h3>Side Bar Features<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<section id="summary">
+<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Y-axis column:</dt><dd><ul>
+<li><p>The user can change what the y-axis is labelled as</p></li>
+<li><p>Default: mapped_region</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Dot size</dt><dd><ul>
+<li><p>the user can visulise the dot size of any of the ML models</p></li>
+<li><p>Default: mean_pred</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>X-axis to display</dt><dd><ul>
+<li><dl class="simple">
+<dt>the user can select which form of conservation was calculated</dt><dd><ul>
+<li><p>Either exact or near</p></li>
+<li><p>Sequence (seq), taxon (tax) or species</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
 <section id="gene-filter">
 <h4>Gene Filter<a class="headerlink" href="#gene-filter" title="Permalink to this heading"></a></h4>
 <ul class="simple">
@@ -500,8 +511,8 @@ The application detects the current Genera in the database.</p>
 </li>
 </ul>
 </section>
-<section id="additional-filters">
-<h4>Additional Filters<a class="headerlink" href="#additional-filters" title="Permalink to this heading"></a></h4>
+<section id="silencing">
+<h4>Silencing<a class="headerlink" href="#silencing" title="Permalink to this heading"></a></h4>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Filter Mean Prediction?</dt><dd><ul>
@@ -524,6 +535,32 @@ The application detects the current Genera in the database.</p>
 </dd>
 </dl>
 </li>
+<li><dl class="simple">
+<dt>y-axis</dt><dd><ul>
+<li><p>The user can select if they view the data as the mapped_region, category or genus</p></li>
+<li><p>Default: mapped_region</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="off-target">
+<h4>Off-Target<a class="headerlink" href="#off-target" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Remove human hits (off-target)?</dt><dd><ul>
+<li><p>Default: selected</p></li>
+<li><p>The user can unselect if they wish to keep the off-target mapping to the hg38 human transcriptome</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="selected-guide-s">
+<h4>Selected Guide(s)<a class="headerlink" href="#selected-guide-s" title="Permalink to this heading"></a></h4>
+<ul class="simple">
 <li><dl class="simple">
 <dt>Filter to reference?</dt><dd><ul>
 <li><p>Depending on the goals of the user, they may wish to restrict the guide list to exactly match a reference</p></li>
@@ -572,41 +609,6 @@ The application detects the current Genera in the database.</p>
 </li>
 </ul>
 </section>
-<section id="summary">
-<h4>Summary<a class="headerlink" href="#summary" title="Permalink to this heading"></a></h4>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Y-axis column:</dt><dd><ul>
-<li><p>The user can change what the y-axis is labelled as</p></li>
-<li><p>Default: mapped_region</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Dot size</dt><dd><ul>
-<li><p>the user can visulise the dot size of any of the ML models</p></li>
-<li><p>Default: mean_pred</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>X-axis to display</dt><dd><ul>
-<li><dl class="simple">
-<dt>the user can select which form of conservation was calculated</dt><dd><ul>
-<li><p>Either exact or near</p></li>
-<li><p>Sequence (seq), taxon (tax) or species</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</section>
 <section id="conservation-parameters">
 <h4>Conservation Parameters<a class="headerlink" href="#conservation-parameters" title="Permalink to this heading"></a></h4>
 <ul class="simple">
@@ -622,19 +624,6 @@ The application detects the current Genera in the database.</p>
 <dt>Dot Size</dt><dd><ul>
 <li><p>The user can increase or decrease the size of the dots</p></li>
 <li><p>Default: 2</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</section>
-<section id="silencing">
-<h4>Silencing<a class="headerlink" href="#silencing" title="Permalink to this heading"></a></h4>
-<ul class="simple">
-<li><dl class="simple">
-<dt>y-axis</dt><dd><ul>
-<li><p>The user can select if they view the data as the mapped_region, category or genus</p></li>
-<li><p>Default: mapped_region</p></li>
 </ul>
 </dd>
 </dl>
@@ -671,6 +660,7 @@ The application detects the current Genera in the database.</p>
 </section>
 <section id="motif">
 <h4>Motif<a class="headerlink" href="#motif" title="Permalink to this heading"></a></h4>
+<p>This links to the Coverage -&gt; Guide + Target location</p>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Choose colour Palette:</dt><dd><ul>
@@ -787,14 +777,20 @@ The application detects the current Genera in the database.</p>
 <li><p>Conservation</p></li>
 <li><p>Silencing</p></li>
 <li><p>Off-Target</p></li>
-<li><p>Filtered Table</p></li>
+<li><p>Selected Guide(s)</p></li>
 <li><p>Guide Location</p></li>
+<li><dl class="simple">
+<dt>Coverage</dt><dd><ul>
 <li><p>Motif</p></li>
-<li><p>Phylogenetic Tree</p></li>
-<li><p>Tree Guides Matches</p></li>
+<li><p>Tree</p></li>
+<li><p>Matches (table)</p></li>
 </ul>
-<section id="balloon-plot-summary">
-<h4>Balloon Plot (Summary)<a class="headerlink" href="#balloon-plot-summary" title="Permalink to this heading"></a></h4>
+</dd>
+</dl>
+</li>
+</ul>
+<section id="id3">
+<h4>Summary<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h4>
 <p>This is the summary of the guide data of the genomic sequence and conservation. This allows the user to explore which genes or regions are conserved and if they wish to proceed with guide selection.</p>
 <ul class="simple">
 <li><p>top bar to showcase the specific values of a ‘clicked on’ guide</p></li>
@@ -808,8 +804,8 @@ The application detects the current Genera in the database.</p>
 </li>
 </ul>
 </section>
-<section id="dot-plotly-conservation">
-<h4>Dot Plotly (Conservation)<a class="headerlink" href="#dot-plotly-conservation" title="Permalink to this heading"></a></h4>
+<section id="conservation">
+<h4>Conservation<a class="headerlink" href="#conservation" title="Permalink to this heading"></a></h4>
 <p>This graph showcases the conservation of the exact (x-axis) vs near (y-axis) matches</p>
 <ul class="simple">
 <li><p>Each dot represents a unique guide</p></li>
@@ -818,8 +814,8 @@ The application detects the current Genera in the database.</p>
 <li><p>The graph will show the outcomes of the filtering choices from <strong>Gene Filter</strong> in the side bar column (automatically opens on this tab)</p></li>
 </ul>
 </section>
-<section id="balloon-plot-silencing">
-<h4>Balloon Plot (Silencing)<a class="headerlink" href="#balloon-plot-silencing" title="Permalink to this heading"></a></h4>
+<section id="id4">
+<h4>Silencing<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h4>
 <p>This section showcases the predicted silencing of any given guide</p>
 <ul class="simple">
 <li><p>The x-axis show the silencing (0 to 1). 1 = predicted to have high silencing and 0 = no silencing</p></li>
@@ -828,8 +824,8 @@ The application detects the current Genera in the database.</p>
 <li><p>For customising the y-axis look under the “Silencing” section in the side bar panel</p></li>
 </ul>
 </section>
-<section id="off-target">
-<h4>Off-Target<a class="headerlink" href="#off-target" title="Permalink to this heading"></a></h4>
+<section id="id5">
+<h4>Off-Target<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h4>
 <p>To ensure that off-target effects are limited, we pre-calculated if the guides could potentially map to the hg38 build of the human transcriptome. The guides were blasted against the human transcriptome using the “Blastn” function. However, a limitation of this is the matched regions are sequential rather than sporatic. So, partial matches may still exist.</p>
 <ul class="simple">
 <li><dl class="simple">
@@ -844,8 +840,8 @@ The application detects the current Genera in the database.</p>
 <li><p>the user needs to unselect the <strong>Remove human hits (off-target)?</strong> if they do not wish to include this setting</p></li>
 </ul>
 </section>
-<section id="filtered-table">
-<h4>Filtered Table<a class="headerlink" href="#filtered-table" title="Permalink to this heading"></a></h4>
+<section id="id6">
+<h4>Selected Guide(s)<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h4>
 <p>This table shows how many guides remain after conservation, silencing and off-target filtering</p>
 <ul class="simple">
 <li><dl class="simple">
@@ -875,8 +871,10 @@ The application detects the current Genera in the database.</p>
 <li><p>The user may decided to go back and refine which genes/regions to select, if needed before doing each guide specific interrogation</p></li>
 </ul>
 </section>
-<section id="id3">
-<h4>Motif<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h4>
+<section id="coverage">
+<h4>Coverage<a class="headerlink" href="#coverage" title="Permalink to this heading"></a></h4>
+<section id="guide-target">
+<h5>Guide + Target<a class="headerlink" href="#guide-target" title="Permalink to this heading"></a></h5>
 <p>The user will need to click the “Load Guides” in the side bar panel to render those remaining from the Filtered Table, which will render the list in the “Select Guide:”</p>
 <p>The order of the Gudies will be based on <strong>Sort by:</strong> in the <strong>Additional Filters</strong> section.</p>
 <ul class="simple">
@@ -897,8 +895,8 @@ The application detects the current Genera in the database.</p>
 </li>
 </ul>
 </section>
-<section id="pylogenetic-tree">
-<h4>Pylogenetic Tree<a class="headerlink" href="#pylogenetic-tree" title="Permalink to this heading"></a></h4>
+<section id="id7">
+<h5>Tree<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h5>
 <p>To understand the overall coverage of any given guide in the phylogenetic tree. The tree was built in iqTree based on the whole sequence.</p>
 <ul class="simple">
 <li><p>The user can customise the graph sidebar panel <strong>Tree</strong></p></li>
@@ -921,8 +919,8 @@ The application detects the current Genera in the database.</p>
 </li>
 </ul>
 </section>
-<section id="tree-guide-matches">
-<h4>Tree Guide Matches<a class="headerlink" href="#tree-guide-matches" title="Permalink to this heading"></a></h4>
+<section id="matches-table">
+<h5>Matches (Table)<a class="headerlink" href="#matches-table" title="Permalink to this heading"></a></h5>
 <p>This table showcases where the guide mapped to. This enables the reserach to check the species of origin, (e.g., Bat in Sarbecovirus) and allows them to go back to the NCBI website if they wish to look at additional inforamtion not present in this tool.</p>
 <ul class="simple">
 <li><dl class="simple">
@@ -935,6 +933,7 @@ The application detects the current Genera in the database.</p>
 </dl>
 </li>
 </ul>
+</section>
 </section>
 </section>
 </section>
