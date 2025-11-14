@@ -20,7 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4. Front-End: Experimental design" href="4.ExperimentalDesign.html" />
+    <link rel="next" title="5. Front-End: Experimental design" href="4.ExperimentalDesign.html" />
     <link rel="prev" title="3. Engine: Processing the Sequence data" href="2.Engine.html" /> 
 </head>
 
@@ -59,7 +59,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#conservation">2. Conservation</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="4.ExperimentalDesign.html">4. Front-End: Experimental design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="4.ExperimentalDesign.html">5. Front-End: Experimental design</a></li>
 <li class="toctree-l3"><a class="reference internal" href="5.UserTips.html">6. User Tips for the analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="6.FAQ.html">7. Frequenctly Asked Questions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="7.Tutorial.html">8. Tutorial</a></li>
@@ -91,8 +91,8 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#main-panel">Main panel</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tab-1-guide-table-summary">Tab 1. Guide Table Summary</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#tab-2-guide-data">Tab 2. Guide data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#database-summary">Database Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#guide-summary">Guide Summary</a></li>
 </ul>
 </li>
 </ul>
@@ -125,7 +125,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="4.ExperimentalDesign.html">4. Front-End: Experimental design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4.ExperimentalDesign.html">5. Front-End: Experimental design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5.UserTips.html">6. User Tips for the analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="6.FAQ.html">7. Frequenctly Asked Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="7.Tutorial.html">8. Tutorial</a></li>
@@ -176,6 +176,12 @@
 <li><p>Merbecovirus</p></li>
 <li><p>Enterovirus A71</p></li>
 </ul>
+<p><strong>Currently availble Rule Types:</strong></p>
+<ul class="simple">
+<li><p>GG</p></li>
+<li><p>NCP1 (Published Guide for SARS-CoV-2)</p></li>
+<li><p>ref (Collaborator request to ensure all the processed data guides exactly matched an in-house reference sequence)</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Identify guides the Virologist, Immunologist etc. wishes to test.
@@ -187,10 +193,11 @@ The application detects the current Genera in the database.</p>
 <h2>Application structure<a class="headerlink" href="#application-structure" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>Overview</p></li>
-<li><p>Conservation</p></li>
+<li><p>Analysis</p></li>
 </ul>
 <section id="common-side-bar-features">
 <h3>Common Side Bar Features<a class="headerlink" href="#common-side-bar-features" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/0.common_sidebar.png"><img alt="Alternative text" src="_images/0.common_sidebar.png" style="width: 200px;" /></a>
 <p><strong>Virus Genus:</strong> contains the list of viral genus/subgenus in the frontend database</p>
 <p><strong>Rule Type:</strong> Showcases the types of rules processed. The default is the <strong>GG</strong> rule.</p>
 <section id="drop-down-menu-appearance-settings">
@@ -227,7 +234,6 @@ The application detects the current Genera in the database.</p>
 </dl>
 </li>
 </ul>
-<p>[insert image of the layout]</p>
 <p><strong>Text &amp; Font</strong></p>
 <ul class="simple">
 <li><dl class="simple">
@@ -332,6 +338,7 @@ The application detects the current Genera in the database.</p>
 </dl>
 </li>
 </ul>
+<a class="reference internal image-reference" href="_images/0.colour_changing.png"><img alt="Alternative text" src="_images/0.colour_changing.png" style="width: 100px;" /></a>
 </section>
 </section>
 <section id="common-main-panel-features">
@@ -347,6 +354,7 @@ The application detects the current Genera in the database.</p>
 </dl>
 </li>
 </ul>
+<a class="reference internal image-reference" href="_images/0.Download.png"><img alt="Alternative text" src="_images/0.Download.png" style="width: 800px;" /></a>
 </section>
 </section>
 <section id="overview">
@@ -401,14 +409,15 @@ The application detects the current Genera in the database.</p>
 </section>
 <section id="main-panel">
 <h3>Main panel<a class="headerlink" href="#main-panel" title="Permalink to this heading"></a></h3>
-<section id="tab-1-guide-table-summary">
-<h4>Tab 1. Guide Table Summary<a class="headerlink" href="#tab-1-guide-table-summary" title="Permalink to this heading"></a></h4>
+<section id="database-summary">
+<h4>Database Summary<a class="headerlink" href="#database-summary" title="Permalink to this heading"></a></h4>
 <ul class="simple">
-<li><p>the opening section shows the total number of guides presented for further filtering</p></li>
+<li><p>the opening section shows the total number of guides presented for further filtering (Backend totals to available guides)</p></li>
 </ul>
+<a class="reference internal image-reference" href="_images/0.overview.png"><img alt="Alternative text" src="_images/0.overview.png" style="width: 800px;" /></a>
 </section>
-<section id="tab-2-guide-data">
-<h4>Tab 2. Guide data<a class="headerlink" href="#tab-2-guide-data" title="Permalink to this heading"></a></h4>
+<section id="guide-summary">
+<h4>Guide Summary<a class="headerlink" href="#guide-summary" title="Permalink to this heading"></a></h4>
 <p><strong>Table</strong></p>
 <p>Allows the user to do an initial exploration of the data and see if their proteins and/or regions of interest are present in the database.</p>
 <p>Additionally, this ensures that the scientist can extract the intial summary table for publication purposes.</p>
@@ -426,6 +435,7 @@ The application detects the current Genera in the database.</p>
 <li><p>summary statiscts based on the <strong>summarise by this column(s)</strong></p></li>
 <li><p>Table is downloaded as a .csv file</p></li>
 </ul>
+<a class="reference internal image-reference" href="_images/0.Guide_summary_table.png"><img alt="Alternative text" src="_images/0.Guide_summary_table.png" style="width: 800px;" /></a>
 <p><strong>Bar plot</strong></p>
 <p>Purpose is to visulise the summary statistics of one column (x-axis) and coloured by a second variable if desired</p>
 <p>The user can start with either <strong>selecting all?</strong> based on the <em>X-axis:</em></p>
@@ -935,7 +945,7 @@ The application detects the current Genera in the database.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="2.Engine.html" class="btn btn-neutral float-left" title="3. Engine: Processing the Sequence data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="4.ExperimentalDesign.html" class="btn btn-neutral float-right" title="4. Front-End: Experimental design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="4.ExperimentalDesign.html" class="btn btn-neutral float-right" title="5. Front-End: Experimental design" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

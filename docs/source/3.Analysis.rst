@@ -36,10 +36,15 @@ Application structure
 ---------------------
 
 - Overview
-- Conservation
+- Analysis
 
 Common Side Bar Features
 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: img/0.common_sidebar.png
+  :width: 200
+  :alt: Alternative text
+
 
 **Virus Genus:** contains the list of viral genus/subgenus in the frontend database
 
@@ -62,8 +67,6 @@ Drop down menu: Appearance Settings
 - Grid Line Colour
     - Default: grey
     - the user either select a colour from the grid, use the hexadecimal naming system or use a colour name (e.g., grey)
-
-[insert image of the layout]
 
 **Text & Font**
 
@@ -118,6 +121,11 @@ Drop down menu: Appearance Settings
 - List of variables that can be coloured
     - Users can update the list as required 
 
+
+.. image:: img/0.colour_changing.png
+  :width: 100
+  :alt: Alternative text
+
 Common Main Panel Features
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -126,6 +134,12 @@ Common Main Panel Features
 - All graphs can be downloaded either as a PDF or PNG
     - PDF: Width and height can be altered
     - PNG: Width, height and resolution can be altered 
+
+.. image:: img/0.Download.png
+  :width: 800
+  :alt: Alternative text
+
+
 
 1. Overview
 -----------
@@ -161,14 +175,17 @@ Bar Plot
 Main panel
 ^^^^^^^^^^
 
-Tab 1. Guide Table Summary
+Database Summary
 """"""""""""""""""""""""""
 
+- the opening section shows the total number of guides presented for further filtering (Backend totals to available guides)
 
-- the opening section shows the total number of guides presented for further filtering
+.. image:: img/0.overview.png
+  :width: 800
+  :alt: Alternative text
 
-Tab 2. Guide data
-"""""""""""""""""
+Guide Summary
+"""""""""""""""""""""
 
 **Table** 
 
@@ -183,6 +200,10 @@ Table
 
 - summary statiscts based on the **summarise by this column(s)**
 - Table is downloaded as a .csv file 
+
+.. image:: img/0.Guide_summary_table.png
+  :width: 800
+  :alt: Alternative text
 
 
 
